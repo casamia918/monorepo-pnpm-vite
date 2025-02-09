@@ -1,12 +1,13 @@
 # 1. Step to reproduce
+
 ```bash
   pnpm install
-  pnpm app dev
+  pnpm webapp dev
 ```
 
 # 2. Depdendency graph
-![dependency_graph](https://github.com/casamia918/monorepo-pnpm-vite/blob/main/dependency%20graph.png)
 
+![dependency_graph](https://github.com/casamia918/monorepo-pnpm-vite/blob/main/dependency%20graph.png)
 
 # 3. Requirement for Absolute Path Import
 
@@ -35,8 +36,6 @@ function ButtonWrapper({ title, ...props }: ButtonWrapperProps) {
 }
 ```
 
-
-
 ## 3.2) In shared/core/components/CoreButton
 
 ```typescript
@@ -60,8 +59,6 @@ function CoreButtonWrapper({ title, ...props }: CoreButtonWrapperProps) {
 }
 
 ```
-
-
 
 ## 3.3) In system/web-app/src/App.tsx
 
