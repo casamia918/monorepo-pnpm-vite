@@ -60,22 +60,22 @@ function CoreButtonWrapper({ title, ...props }: CoreButtonWrapperProps) {
 
 ```
 
-## 3.3) In system/web-app/src/App.tsx
+## 3.3) In system/web-app/src/App.tsx (Failed!)
 
 ```typescript
 // 3.3.1) Importing from @gerp/ui root  => WORKING
 import { Button, ButtonWrapper } from '@gerp/ui';
 
-// 3.3.2) Importing from @gerp/ui/components => FAILED !!!
+// 3.3.2) Importing from @gerp/ui/components => FAILED !!!!!!!
 import { Button, ButtonWrapper } from '@gerp/ui/components';
 
-// 3.3.3) Import from @gerp/core => FAILED !!
+// 3.3.3) Import from @gerp/core => FAILED !!!!!!
 import { CoreButton, isBlankOrEmpty } from '@gerp/core';
 
-// 3.3.4) Import from @gerp/core/components => FAILED !!
+// 3.3.4) Import from @gerp/core/components => FAILED !!!!!!
 import { CoreButton, CoreButtonProps } from '@gerp/core/components';
 
-// 3.3.5) Import from @gerp/core/util => FAILED !!
+// 3.3.5) Import from @gerp/core/util => FAILED !!!!!!
 import { isBlankOrEmpty } from '@gerp/core/util';
 
 function App() {
@@ -90,10 +90,5 @@ function App() {
   );
 }
 
-function printEnv() {
-  return Object.entries(import.meta.env).map(([k, v]) => {
-    return `${k}: ${v}\n`;
-  });
-}
 
 ```
