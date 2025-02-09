@@ -83,6 +83,12 @@ importers:
 
   shared/ui: {}
 
+  system/web-app:
+    dependencies:
+      '@gerp/ui':
+        specifier: 'workspace:'
+        version: link:../../shared/ui
+
 packages:
 
   '@babel/helper-string-parser@7.25.9':
