@@ -1,16 +1,19 @@
 import './App.css';
 
-// 1) Importing from @gerp/ui root  => WORKING
+// 3.3.1) Importing from @gerp/ui root  => WORKING
 import { Button, ButtonWrapper } from '@gerp/ui';
 
-// 2) Importing from @gerp/ui/components => FAILED
+// 3.3.2) Importing from @gerp/ui/components => FAILED
 // import { Button, ButtonWrapper } from '@gerp/ui/components';
 
-// 3) Import from @gerp/core => FAILED
+// 3.3.3) Import from @gerp/core => FAILED
 import { CoreButton, isBlankOrEmpty } from '@gerp/core';
 
-// 4) Import from @gerp/core/components => FAILED
-// import { Button, ButtonWrapper } from '@gerp/core/components';
+// 3.3.4) Import from @gerp/core/components => FAILED
+// import { CoreButton, CoreButtonProps } from '@gerp/core/components';
+
+// 3.3.5) Import from @gerp/core/util => FAILED
+// import { isBlankOrEmpty } from '@gerp/core/util';
 
 function App() {
   return (

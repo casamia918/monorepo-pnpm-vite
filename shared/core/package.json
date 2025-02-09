@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "main": "./dist/core.js",
-  "types": "./dist/core/main.d.ts",
+  "types": "./dist/core/index.d.ts",
   "scripts": {
     "dev": "vite",
     "build": "pnpm clean && tsc && vite build",

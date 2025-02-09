@@ -9,8 +9,8 @@ export default defineConfig({
   resolve: {
     // Hot Moudle Replacement
     alias: {
-      '@gerp/ui': resolve(__dirname, '../../shared/ui/src/main.ts'),
-      '@gerp/core': resolve(__dirname, '../../shared/core/src/main.ts'),
+      '@gerp/ui': resolve(__dirname, '../../shared/ui/src/index.ts'),
+      '@gerp/core': resolve(__dirname, '../../shared/core/src/index.ts'),
     },
   },
 });
