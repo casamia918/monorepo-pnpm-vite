@@ -4,8 +4,13 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "env-cmd -e local vite",
     "build": "tsc -b && vite build",
+    "build:local": "pnpm clean && env-cmd -e local pnpm build",
+    "build:dev": "pnpm clean && env-cmd -e dev pnpm build",
+    "build:stage": "pnpm clean && env-cmd -e stage pnpm build",
+    "build:prod": "pnpm clean && env-cmd -e prod pnpm build",
+    "clean": "rimraf ./dist",
     "lint": "eslint .",
     "preview": "vite preview"
   },
