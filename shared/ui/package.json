@@ -7,8 +7,10 @@
   "types": "./dist/main.d.ts",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview"
+    "build": "pnpm clean && tsc && vite build",
+    "preview": "vite preview",
+    "clean": "rimraf ./dist"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "dependencies": {}
 }

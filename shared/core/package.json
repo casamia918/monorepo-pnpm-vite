@@ -3,10 +3,16 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "main": "./dist/core.js",
+  "types": "./dist/core/main.d.ts",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview"
+    "build": "pnpm clean && tsc && vite build",
+    "preview": "vite preview",
+    "clean": "rimraf ./dist"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "dependencies": {
+    "@gerp/ui": "workspace:"
+  }
 }

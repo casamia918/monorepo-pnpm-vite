@@ -8,6 +8,7 @@
     "lint": "eslint .",
     "format": "prettier --write .",
     "ui": "pnpm --filter @gerp/ui",
+    "core": "pnpm --filter @gerp/core",
     "app": "pnpm --filter @gerp/web-app"
   },
   "keywords": [],

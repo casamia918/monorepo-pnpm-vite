@@ -82,12 +82,19 @@ importers:
         specifier: ^5.1.4
         version: 5.1.4(typescript@5.7.3)(vite@5.4.14(@types/node@20.17.17))
 
-  shared/core: {}
+  shared/core:
+    dependencies:
+      '@gerp/ui':
+        specifier: 'workspace:'
+        version: link:../ui
 
   shared/ui: {}
 
   system/web-app:
     dependencies:
+      '@gerp/core':
+        specifier: 'workspace:'
+        version: link:../../shared/core
       '@gerp/ui':
         specifier: 'workspace:'
         version: link:../../shared/ui

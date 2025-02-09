@@ -15,7 +15,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@gerp/ui": "workspace:"
+    "@gerp/ui": "workspace:",
+    "@gerp/core": "workspace:"
   },
   "devDependencies": {}
 }

@@ -1,6 +1,7 @@
 import './App.css';
 
 import { Button, ButtonWrapper } from '@gerp/ui';
+import {} from '@gerp/core';
 
 function App() {
   return (

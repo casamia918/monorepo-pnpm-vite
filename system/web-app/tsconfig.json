@@ -1,7 +1,14 @@
 {
   "files": [],
-  "references": [
-    { "path": "./tsconfig.app.json" },
-    { "path": "./tsconfig.node.json" }
-  ]
+  "references": [{ "path": "./tsconfig.app.json" }, { "path": "./tsconfig.node.json" }],
+  "compilerOptions": {
+    "rootDir": "../../",
+    "baseUrl": "./",
+    "paths": {
+      "@gerp/ui": ["../../shared/ui/src"],
+      "@gerp/ui/*": ["../../shared/ui/src/*"],
+      "@gerp/core": ["../../shared/core/src"],
+      "@gerp/core/*": ["../../shared/core/src/*"]
+    }
+  }
 }
