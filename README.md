@@ -69,7 +69,7 @@ import { Button, ButtonWrapper } from '@gerp/ui';
 // 3.3.2) Importing from @gerp/ui/components => FAILED !!!!!!!
 import { Button, ButtonWrapper } from '@gerp/ui/components';
 
-// 3.3.3) Import from @gerp/core => FAILED !!!!!!
+// 3.3.3) Import from @gerp/core => FAILED !!!!!! (Error message is below)
 import { CoreButton, isBlankOrEmpty } from '@gerp/core';
 
 // 3.3.4) Import from @gerp/core/components => FAILED !!!!!!
@@ -90,5 +90,11 @@ function App() {
   );
 }
 
+```
+
+```bash
+// Error message
+Could not find a declaration file for module '@gerp/core'. 'C:/dev/vite/250209_new_vite_pnpm/shared/core/dist/core.js' implicitly has an 'any' type.
+  Try `npm i --save-dev @types/gerp__core` if it exists or add a new declaration (.d.ts) file containing `declare module '@gerp/core';`ts(7016)
 
 ```
