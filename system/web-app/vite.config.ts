@@ -7,6 +7,7 @@ import tsconfigPaths from 'vite-tsconfig-paths';
 export default defineConfig({
   plugins: [react(), tsconfigPaths({})],
   resolve: {
+    // Hot Moudle Replacement
     alias: {
       '@gerp/ui': resolve(__dirname, '../../shared/ui/src/main.ts'),
       '@gerp/core': resolve(__dirname, '../../shared/core/src/main.ts'),
